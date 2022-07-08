@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-family: 'Fraunces', serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --v-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--cream);
+}
+
+/* Card */
+.card {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.card-img {
+    width: inherit;
+    max-width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body .text-muted {
+    color: var(--dark-grayish-blue);
+    text-transform: uppercase;
+    margin: 5px 0 5px 0;
+    letter-spacing: 0.188rem;
+}
+
+.card-body .card-title {
+    color: var(--v-dark-blue);
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+    letter-spacing: -0.063rem;
+    line-height: 0.9;
+}
+
+.card-body .card-text {
+    margin: 20px 0 20px 0;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card-body .card-pricing {
+    margin: 50px 0 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-body .card-pricing .pricing-discounted {
+    color: var(--dark-cyan);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+.card-body .card-pricing .pricing-initial {
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+.card-body .card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 5px 0;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-cyan);
+    font-family: inherit;
+}
+
+.card-body .card-button:hover {
+    background-color: hsl(158, 38%, 24%);
+    cursor: pointer;
+}
+
+.card-body .card-button .card-button-icon-cart {
+    margin: 0 5px 0 5px;
+}
+
+.card-body .card-button .card-button-text {
+    color: white;
+    margin: 0 5px 0 5px;
+}
