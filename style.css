@@ -48,6 +48,14 @@ body {
     max-width: 100%;
 }
 
+.mobile {
+    display: block;
+}
+
+.desktop {
+   display: none;
+}
+
 .card-body {
     padding: 20px;
 }
@@ -120,4 +128,31 @@ body {
 .card-body .card-button .card-button-text {
     color: white;
     margin: 0 5px 0 5px;
+}
+
+@media (min-width: 1439px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+    }
+
+    .card-img {
+        width: 300px;
+        height: 500px;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 30px;
+    }
+
 }
